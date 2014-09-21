@@ -1,0 +1,29 @@
+#To crawl linkedin:
+go("https://www.linkedin.com/uas/login")
+enter(your email)
+enter(your password)
+click($#btn-primary)
+sleep(6000)
+prtsc()
+end()
+
+#To crawl RenRen:
+go("http://www.renren.com/SysHome.do")
+enter(youremail)
+enter(yourpassword)
+click(login)
+prtsc()
+end()
+
+
+#To crawl baidu
+set_windowsize(1360,4000)
+go("http://www.baidu.com")
+while(true)
+{
+enter(some keyword)
+click($#su)
+sleep(1000)
+prtsc()
+}
+end()
